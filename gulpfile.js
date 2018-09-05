@@ -7,26 +7,25 @@ var gulp = require('gulp'),
 		cleanCss = require('gulp-clean-css'); // минификация CSS
 
 gulp.task('scss', function() {
-	return gulp.src('app/_scss/**/*.scss') // Указываем папку с SCSS файлом
+	return gulp.src('www/_scss/**/*.scss') // Указываем папку с SCSS файлом
 	.pipe(scss()) // Указываем плагин для работы с файлом ( преобразуем SCSS в CSS)
 	.pipe(cleanCss( {level: { 1: { specialComments: 0 } } })) // Минифицируем CSS
-	.pipe(gulp.dest('app/_css')) // Выгружаем результат в папку _css
+	.pipe(gulp.dest('www/_css')) // Выгружаем результат в папку _css
 	.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
 gulp.task('browser-sync', function() {
 	browserSync({ 
-		server: { // Параметры сервера
-			baseDir: 'app' // Директория сервера
-		},
+		proxy: "test.mega",
 		notify: true // Отключение уведомлений от сервера
 	});
 });
 
 gulp.task('watch', ['browser-sync', 'scss'], function() {
-	gulp.watch('app/_scss/**/*.scss', ['scss']);// Наблюдение за scss файлами
-	gulp.watch('app/**/*.html', browserSync.reload);
-	gulp.watch('app/_js/**/*.js', browserSync.reload);
+	gulp.watch('www/_scss/**/*.scss', ['scss']);// Наблюдение за scss файлами
+	gulp.watch('www/**/*.html', browserSync.reload);
+	gulp.watch('www/**/*.php', browserSync.reload);
+	gulp.watch('www/_js/**/*.js', browserSync.reload);
 	// Наблюдение за другими типами файлов
 });
 
@@ -36,6 +35,14 @@ gulp.task('default', ['watch']);
 
 
 
+// gulp.task('browser-sync', function() {
+// 	browserSync({ 
+// 		server: { 
+// 			baseDir: 'www' 
+// 		},
+// 		notify: true 
+// 	});
+// });
 
 
 

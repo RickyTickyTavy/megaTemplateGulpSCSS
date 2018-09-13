@@ -51,8 +51,6 @@
 
 <img style="width:50%;height: auto;margin: auto;display: block;" src="/_img/logo.svg" alt="logo">
 
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius nihil sunt, quidem dolorum quam officia deleniti quas nostrum dolorem beatae commodi repellendus, consequuntur placeat pariatur! Necessitatibus aliquid aut culpa laudantium!</p>
-
 <script>
 	head.load("/_js/jquery.js",function(){
 	head.load("/_js/jquery.lazysizes.min.js", "https://cdn.mega.by/_js/megac/0.0.1/jquery.megac.min.js", function(){

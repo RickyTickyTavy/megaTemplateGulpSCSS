@@ -14,27 +14,37 @@ gulp.task('scss', function() {
 	.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
+
+// gulp.task('js', function() {
+// 	return gulp.src([
+// 		'app/libs/jquery/dist/jquery.min.js',
+// 		'app/js/common.js', // Always at the end
+// 		])
+// 	.pipe(concat('scripts.min.js'))
+// 	// .pipe(uglify()) // Mifify js (opt.)
+// 	.pipe(gulp.dest('app/js'))
+// 	.pipe(browsersync.reload({ stream: true }))
+// });
+
+
 gulp.task('browser-sync', function() {
 	browserSync({ 
-		proxy: "project.name", //название папки сайта
-		notify: true // Отключение уведомлений от сервера
+		proxy: "megaTemplateGulpSCSS", //название папки сайта
+		notify: false // Отключение уведомлений от сервера
 	});
 });
 
-gulp.task('watch', ['browser-sync', 'scss'], function() {
+gulp.task('watch', ['scss', 'browser-sync'], function() {
 	gulp.watch('www/_scss/**/*.scss', ['scss']);// Наблюдение за scss файлами
-	gulp.watch('www/**/*.html', browserSync.reload);
 	gulp.watch('www/**/*.php', browserSync.reload);
 	gulp.watch('www/_js/**/*.js', browserSync.reload);
+	gulp.watch('www/**/*.css', browserSync.reload);
 	// Наблюдение за другими типами файлов
 });
 
 gulp.task('default', ['watch']);
 
-
-
-
-
+//html version of browser sync
 // gulp.task('browser-sync', function() {
 // 	browserSync({ 
 // 		server: { 

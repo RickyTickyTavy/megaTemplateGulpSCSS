@@ -1,10 +1,4 @@
-@font-face {
-	font-family: gothampro-regular;
-	src: url(/_css/font/gothampro-regular.eot);
-	src: url(/_css/font/gothampro-regular.eot?#iefix) format("embedded-opentype"), url(/_css/font/gothampro-regular.woff) format("woff"), url(/_css/font/gothampro-regular.ttf) format("truetype");
-	font-weight: 400;
-	font-style: normal;
-	font-stretch: normal}
+@import 'fonts';
 
 * {
 	margin: 0;
@@ -23,9 +17,9 @@
 body {
 	width: 100%;
 	height: 100%;
-	font-family: gothampro-regular, Arial, Helvetica, sans-serif;
+	font-family: 'gothampro-regular', Arial, Helvetica, sans-serif;
 	font-size: .9vw;
-	color: $darkbluetext;
+	color: #333;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
 	visibility: visible !important;}
@@ -83,3 +77,5 @@ ul.cols>li {
 
 .img-responsive {
 	width: 100%;}
+
+@import 'media';

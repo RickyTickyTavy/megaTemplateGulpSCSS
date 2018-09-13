@@ -16,7 +16,7 @@ gulp.task('scss', function() {
 
 gulp.task('browser-sync', function() {
 	browserSync({ 
-		proxy: "test.mega",
+		proxy: "project.name", //название папки сайта
 		notify: true // Отключение уведомлений от сервера
 	});
 });

@@ -1,0 +1,85 @@
+@font-face {
+	font-family: gothampro-regular;
+	src: url(/_css/font/gothampro-regular.eot);
+	src: url(/_css/font/gothampro-regular.eot?#iefix) format("embedded-opentype"), url(/_css/font/gothampro-regular.woff) format("woff"), url(/_css/font/gothampro-regular.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline-style: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	text-size-adjust: none;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-appearance: none;}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: gothampro-regular, Arial, Helvetica, sans-serif;
+	font-size: .9vw;
+	color: $darkbluetext;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	visibility: visible !important;}
+
+ul {
+	padding: 0;
+	margin: 0 0;
+	overflow: hidden;
+	list-style-type: none}
+ul.cols {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	overflow: visible!important;}
+ul.cols>li {
+	display: table-cell;
+	list-style-type: none;
+	vertical-align: middle;
+	position: relative;
+	padding: 0;
+	margin: 0;}
+
+.width-5p {
+	width: 5%!important;}
+.width-10p {
+	width: 10%!important;}
+.width-20p {
+	width: 20% !important}
+.width-30p {
+	width: 30% !important}	
+.width-40p {
+	width: 40% !important}
+.width-50p {
+	width: 50%!important;}
+.width-60p {
+	width: 60%!important;}
+.width-70p {
+	width: 70%!important;}
+.width-80p {
+	width: 80%!important;}
+.width-90p {
+	width: 90%!important;}
+.width-100p {
+	width: 100%!important;}
+
+.text-right {
+	text-align: right;}
+.text-left {
+	text-align-last: left;}
+.text-center {
+	text-align: center;}
+
+.img-responsive {
+	width: 100%;}

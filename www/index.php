@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
 <!-- PX to VW converter -->
 <div style="position:fixed;bottom:0;right:0;padding:5px 10px;font-size:12px;background:rgba(0,0,0, .6);color:#fff;z-index:99999;">
 	PX to VW :
@@ -46,9 +47,17 @@
 			window.getSelection().removeAllRanges(); 
 	});
 </script>
-<!-- PX to VW converter -->
+<!-- /PX to VW converter -->
 
 <img style="width:50%;height: auto;margin: auto;display: block;" src="/_img/logo.svg" alt="logo">
+
+<!-- code here -->
+
+
+
+
+
+
 
 <script>
 	head.load("/_js/jquery.js",function(){

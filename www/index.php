@@ -18,11 +18,11 @@
 
 <body>
 <!-- PX to VW converter -->
-<div style="position:fixed;bottom:1%;padding:5px;font-size:12px;right:5%;background:rgba(0,0,0, .3);color:#fff;z-index:99999;">
+<div style="position:fixed;bottom:0;right:0;padding:5px 10px;font-size:12px;background:rgba(0,0,0, .6);color:#fff;z-index:99999;">
 	PX to VW :
 	<input type="number" onchange="pxTOvw(this.value);" style="margin:5px 0;display:block;"> 
 	<span>result: <span class="result_px_vw" id="result_px_vw"></span></span>
-	<button class="vw-copy" style="display:block;float:right;background: none;text-transform: uppercase;color: #fff;border:1px solid #fff;font-size:10px;padding:1px;cursor:pointer;">copy</button>
+	<button class="vw-copy" style="display:block;float:right;background:#fff;color:#333;font-size:10px;padding:1px 2px;cursor:pointer;text-transform: uppercase;">copy</button>
 </div>
 <script>
 	  function pxTOvw(value) {
@@ -36,7 +36,6 @@
 			var range = document.createRange(); 
 			range.selectNode(vwValue);  
 			window.getSelection().addRange(range);  
-
 			try {  
 				var successful = document.execCommand('copy');  
 				var msg = successful ? 'successful' : 'unsuccessful';  

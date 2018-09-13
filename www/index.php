@@ -5,7 +5,7 @@
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1"/>
 	<link href="/_img/favicon.ico" rel="shortcut icon"/>
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/_img/favicon/apple-touch-icon-180x180.png">
 	<meta http-equiv="content-type" content="text/html;charset=utf-8"/> 
 	<meta name="author" content="MEGA DESIGN STUDIO(TM) (www.mega.by)"/>
 	<meta name="copyright" content=""/>
